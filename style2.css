@@ -1,0 +1,224 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side {
+    height: 15rem;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.logo {
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+.ellipse {
+    height: 25rem;
+    width: 25rem;
+    background-color: red;
+    border: 1px solid red;
+    clip-path: circle(54.3% at 15% 0);
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    /* height: 2.5rem; */
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px grey;
+}
+
+.nav-link {
+    text-decoration: none;
+    /* font-size: 1.25rem; */
+    color: black;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.store-description {
+    /* font-size: 1rem; */
+    margin-top: 2rem;
+    padding: 1rem;
+    /* text-align: left; */
+    /* overflow: scroll; */
+}
+
+.banner {
+    height: 15rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    font-family: 'Pacifico', cursive;
+    /* font-size: 3rem; */
+    color: rgb(228, 223, 223);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 33rem; */
+    margin: 1rem;
+}
+
+.card {
+    margin: 1.5rem;
+    width: 15rem;
+    height: 22rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px grey;
+}
+
+/* I have to make a better solution for these repetitive code. Adding imgs in html code */
+.handbag {
+    margin: 0.75rem;
+    height: 13.5rem;
+    width: 13.5rem;
+    border-radius: 10px;
+    background-image: url("handbag.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.outfit {
+    margin: 0.75rem;
+    height: 13.5rem;
+    width: 13.5rem;
+    border-radius: 10px;
+    background-image: url("outfit.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bijouterie {
+    margin: 0.75rem;
+    height: 13.5rem;
+    width: 13.5rem;
+    border-radius: 10px;
+    background-image: url("bijou.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-title {
+    /* font-size: 1.5rem; */
+    margin-top: 1rem;
+    margin-left: 0.75rem;
+}
+
+.btn {
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0.75rem 1rem 0.75rem;
+    background-color: red;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn>a {
+    text-decoration: none;
+    /* font-size: 1.25rem; */
+    color: rgb(228, 223, 223);
+}
+
+footer {
+    display: flex;
+    margin-top: 2rem;
+    background-color: rgba(255, 60, 60, 0.827);
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.links>a {
+    text-decoration: none;
+    /* font-size: 1.25rem; */
+    padding: 0.5rem;
+    color: rgb(228, 223, 223);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+}
+
+.social-media>i {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+@media ((min-width: 700px) and (max-width:1100px)) {
+    nav {
+        width: 20rem;
+        align-self: flex-end;
+        margin-right: 4rem;
+        margin-bottom: 45rem;
+        position: absolute;
+    }
+}
+
+@media (min-width:1100px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        padding-top: 4rem;
+        padding-left: 4rem;
+    }
+
+    .ellipse {
+        height: 35rem;
+        width: 35rem;
+    }
+
+    nav {
+        width: 30rem;
+        margin-top: 2rem;
+    }
+
+    .banner-text {
+        font-size: 2rem;
+    }
+
+    .cards {
+        padding: 5rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
